@@ -8,7 +8,7 @@ pygame.init()
 #create the screen
 screen = pygame.display.set_mode((800, 600))
  #BACKGROUND IMAGE
-background = pygame.image.load('background.png')
+backgrounds = pygame.image.load('background.png')
 
 #background sound
 mixer.music.load('background.wav')
@@ -99,7 +99,7 @@ while running:
     #RGB = Red,green,blue
     screen.fill((0, 0, 0))
     #backgrond image always show
-    screen.blit(background,(0,0))
+    screen.blit(backgrounds,(0,0))
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
